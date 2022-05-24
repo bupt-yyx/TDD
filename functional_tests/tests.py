@@ -58,7 +58,7 @@ class NewVisitorTest(LiveServerTestCase):
         self.wait_for_row_in_list_table('1: Buy peacock feathers')
 
         edith_list_url=self.browser.current_url
-        self.assertRegex(edith_list_url,'/list/.+')
+        self.assertRegex(edith_list_url,'/lists/.+')
         #a new user
         self.browser.quit()
         self.browser=webdriver.Chrome()
